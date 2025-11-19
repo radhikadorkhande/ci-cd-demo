@@ -1,0 +1,17 @@
+{
+  "name": "ci-demo",
+  "version": "1.0.0",
+  "description": "A demo Node project for Jenkins CI/CD pipeline",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^15.0.0"
+  },
+  "jest-junit": {
+    "outputDirectory": "./test-results",
+    "outputName": "junit.xml"
+  }
+}
